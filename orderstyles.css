@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border-radius: 1.25em;
+    box-shadow: 0 1.875em 1.25em -0.625em hsla(224, 23%, 55%, 0.25);
+    margin: 6.375em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: white; 
+    width: 28.1875em;
+}
+
+.container img {
+    border-radius: 1.25em 1.25em 0 0;
+    width: inherit;
+}
+
+strong {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 1.75em;
+    padding-top: 2.9375rem;
+    width: 13.75rem;
+}
+
+p {
+    line-height: 1.5em;
+    text-align: center;
+}
+
+#description {
+    padding:  1.125rem 0 1.375rem 0;
+    width: 18.375rem;
+}
+
+.price {
+    background: hsl(225, 100%, 98%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 22.125rem;
+    height: 6.1875rem;
+    margin-bottom: 2em;
+}
+
+.price img {
+    align-self: center;
+    width: 3.0625rem;
+    height: 3.0625rem;
+    padding: 0 1.1875em 0 1.5625em;
+}
+
+.plan-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plan-price .annual-plan{
+    padding-bottom: 0.125em;
+}
+
+.plan-price .annual-price{
+    padding-top: 0.125em;
+}
+
+.price a {
+    align-self: center;
+    color: hsl(245, 75%, 52%);
+    text-align: end;
+    text-decoration: underline;
+    margin-left: 5.440375em;
+}
+
+.price a:hover {
+    color: hsla(245, 75%, 52%, 0.7);
+}
+
+.price a:hover {
+    text-decoration: none;
+}
+
+.price a, button, .cancel {
+    font-weight: 700;
+}
+
+button {
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    box-shadow: 0 1.25em 1.25em hsla(224, 23%, 55%, 0.3);
+    color: hsl(225, 100%, 98%);
+    cursor: pointer;
+    font-size: 0.9375em;
+    width: 22.125rem;
+    height: 3.125rem;
+}
+
+button:hover {
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    margin: 2.25em 0 3.25em 0;
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.price, button {
+    border-radius: 0.625em;
+}
+
+@media (max-width: 31.1875em) {
+    body {
+        background: url("./images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: hsl(225, 100%, 94%);
+        font-size: 0.9375em;
+    }
+
+    .container {
+        margin: 4.4375rem;
+        width: 20.4375rem;
+    }
+
+    h1 {
+        font-size: 1.492em;
+        padding-top: 2.0625rem;
+        width: 10.9375rem;
+    }
+
+    #description {
+        padding:  1.125rem 0 1.5rem 0;
+        width: 16.25rem;
+    }
+
+    .price {
+        width: 17.3125rem;
+        height: 5.0625rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .price img {
+        width: 3rem;
+        height: 3rem;
+        padding: 0 1.25rem 0 0.9375rem;
+    }
+
+    .plan-price .annual-plan{
+        padding-bottom: 0.0625em;
+    }
+
+    .plan-price .annual-price{
+        padding-top: 0.0625em;
+    }
+
+    .price a {
+        margin-left: 2.5425rem;
+    }
+
+    button {
+        width: 17.4375rem;
+    }
+
+    .cancel {
+        margin: 1.625rem 0 2.1875rem 0;
+    }
+}
